@@ -12,8 +12,8 @@ public class GrepApplication {
 		try (FileReader fileReader = new FileReader(file); BufferedReader reader = new BufferedReader(fileReader);) {
 			String s = null;
 			while ((s = reader.readLine()) != null) {
+				lineCount++;
 				if (!s.equals("")) {
-					lineCount++;
 					String[] words = s.split(" ");
 					for(int i=0;i<words.length;i++)
 					{
