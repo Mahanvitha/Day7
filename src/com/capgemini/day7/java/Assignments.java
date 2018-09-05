@@ -13,7 +13,7 @@ import java.util.*;
 
 		public Assignments() {
 			super();
-			// TODO Auto-generated constructor stub
+			
 		}
 
 		public Assignments(File assignmentName, LocalDate dueDate) {
@@ -31,7 +31,7 @@ import java.util.*;
 		}
 
 		public static boolean remove(Assignments assign) {
-			// assign.assignmentFile.delete();
+		
 			if (linked.remove(assign)) {
 				return true;
 			}
